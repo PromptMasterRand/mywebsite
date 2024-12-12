@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Helpdesk Ticketing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Submit a Support Ticket</h1>
+    </header>
+
+    <section id="ticket-form">
+        <h2>Ticket Submission</h2>
+        <form action="submit-ticket.php" method="POST">
+            <!-- Name Field -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="What is your name?">
+
+            <!-- Email Field -->
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="What is your email address?">
+
+            <!-- Issue Description -->
+            <label for="issue">Issue Description:</label>
+            <textarea id="issue" name="issue" rows="5" required placeholder="Please describe your issue here"></textarea>
+
+            <!-- Priority Field -->
+            <label for="priority">Priority:</label>
+            <select id="priority" name="priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Ticket</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Randon. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
